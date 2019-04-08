@@ -3,7 +3,22 @@
 <head>
     <style>
         .error { color: red; }
-       
+
+        .input1 {
+            margin-left: 47px
+        }   
+
+        .input2 {
+            margin-left: 51px
+        }
+
+        .input3 {
+            margin-left: 7px
+        }
+
+        .input4 {
+            margin-left: 4px
+        }
     </style>
 
 </head>
@@ -11,22 +26,22 @@
     <h1>Signup Form</h1>
     <form action="/signup" method='POST'>
         <label>Username
-            <input name="username" type="text" value="{{username}}"/>
+            <input class="input1" name="username" type="text" value="{{username}}"/>
         </label>
         <p class="error">{{username_error}}</p>
        
         <label> Password
-            <input name="password" type="password" value=''/>
+            <input class="input2" name="password" type="password" value=''/>
         </label>
         <p class="error">{{password_error}}</p>
 
         <label> Verify Password
-            <input name="verify_password" type="password" value=''/>
+            <input class="input3" name="verify_password" type="password" value=''/>
         </label>
         <p class="error">{{verify_password_error}}</p>
 
         <label> Email (Optional)
-            <input name="email" type="text" value="{{email}}"/>
+            <input class="input4" name="email" type="text" value="{{email}}"/>
         </label>
         <p class="error">{{email_error}}</p><br>
         <input type="submit"/>
